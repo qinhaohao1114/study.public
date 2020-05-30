@@ -1,0 +1,23 @@
+<beans>
+    <bean id="AccountDao" class="com.study.pub.dao.impl.AccountDaoImpl">
+        <property name="connectionUtils" ref="ConnectionUtils"/>
+    </bean>
+
+    <bean id="TransferService" class="com.study.pub.service.impl.TransferServiceImpl">
+        <property name="accountDao" ref="AccountDao"/>
+        <property name="transactionManager" ref="TransactionManager"/>
+    </bean>
+
+    <bean id="ConnectionUtils" class="com.study.pub.utils.ConnectionUtils">
+    </bean>
+
+    <bean id="TransactionManager" class="com.study.pub.utils.TransactionManager">
+        <property name="connectionUtils" ref="ConnectionUtils"/>
+    </bean>
+
+    <bean id="ProxyFactory" class="com.study.pub.utils.ProxyFactory">
+        <property name="transactionManager" ref="TransactionManager"/>
+    </bean>
+
+
+</beans>

@@ -1,9 +1,10 @@
 package com.study.pub.servlet;
 
+import com.study.pub.factory.BeanFactory;
 import com.study.pub.pojo.Result;
 import com.study.pub.service.TransferService;
-import com.study.pub.service.impl.TransferServiceImpl;
 import com.study.pub.utils.JsonUtils;
+import com.study.pub.utils.ProxyFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +16,8 @@ import java.io.IOException;
 @WebServlet(name="transferServlet",urlPatterns = "/transferServlet")
 public class TransferServlet extends HttpServlet {
     // 1. 实例化service层对象
-    private TransferService transferService = new TransferServiceImpl();
+    private ProxyFactory proxyFactory = (ProxyFactory) BeanFactory.getObject("ProxyFactory");
+    private TransferService transferService= (TransferService) proxyFactory.getProxy(BeanFactory.getObject("TransferService"));
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -25,7 +27,7 @@ public class TransferServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse
-            resp) throws ServletException, IOException {
+            resp) throws IOException {
 // 设置请求体的字符编码
         req.setCharacterEncoding("UTF-8");
         String fromCardNo = req.getParameter("fromCardNo");
@@ -35,7 +37,7 @@ public class TransferServlet extends HttpServlet {
         Result result = new Result();
         try {
 // 2. 调⽤service层⽅法
-            transferService.transfer(fromCardNo, toCardNo, money);
+          transferService.transfer(fromCardNo, toCardNo, money);
             result.setStatus("200");
         } catch (Exception e) {
             e.printStackTrace();
