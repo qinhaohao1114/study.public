@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>
+    <servlet>
+        <servlet-name>qhh</servlet-name>
+        <servlet-class>com.easy.tomcat.QhhHttpServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>qhh</servlet-name>
+        <url-pattern>/qhh</url-pattern>
+    </servlet-mapping>
+</web-app>
