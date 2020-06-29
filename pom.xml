@@ -12,6 +12,7 @@
         <module>self-ioc-aop</module>
         <module>spring-mvc</module>
         <module>easy-tomcat</module>
+        <module>silf-hash</module>
     </modules>
 
 
