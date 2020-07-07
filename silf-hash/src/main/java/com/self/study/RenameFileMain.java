@@ -12,19 +12,25 @@ import java.util.List;
  **/
 public class RenameFileMain {
 
-    public static String dir="/Users/qinhaohao/Documents/模块二/任务三";
-
+    public static String[] disArray=new String[]{"/Users/qinhaohao/Documents/模块二/任务三"};
+    public static int startIndex=368;
     public static void main(String[] args) {
-        int startIndex=368;
+        for (String dis : disArray) {
+            renameDir(dis);
+        }
+    }
+
+    public static void renameDir(String dir) {
+        System.out.println("重命名文件夹：" + dir);
         File file = new File(dir);
-        if (file.isDirectory()){
+        if (file.isDirectory()) {
             File[] files = file.listFiles();
             List<File> list = Arrays.asList(files);
             list.sort(Comparator.comparing(File::getName));
             for (File f : list) {
                 String name = f.getName();
                 System.out.println(name);
-                String newName=new StringBuffer(name).replace(0,5,startIndex+".").toString();
+                String newName = new StringBuffer(name).replace(0, 5, startIndex + ".").toString();
                 startIndex++;
                 System.out.println(newName);
                 String newFileName=dir+"/"+newName;
