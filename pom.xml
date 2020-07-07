@@ -13,6 +13,8 @@
         <module>spring-mvc</module>
         <module>easy-tomcat</module>
         <module>silf-hash</module>
+        <module>global_id</module>
+        <module>schedual</module>
     </modules>
 
 
