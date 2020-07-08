@@ -202,27 +202,6 @@ public class PaxosMain {
         }
         return RETRY;
 
-//        HashMap<String, Integer> count = new HashMap<>();
-//        for (ServerAcceptor acceptor : acceptors) {
-//            if (acceptor.getPort()==null||acceptor.getPort().isEmpty()){
-//                continue;
-//            }
-//            Integer c = count.getOrDefault(acceptor.getPort(), 0);
-//            c++;
-//            count.put(acceptor.getPort(),c);
-//        }
-//        if (count.isEmpty()){
-//            return null;
-//        }
-//        String result=null;
-//        Integer max=0;
-//        for (Map.Entry<String, Integer> entry : count.entrySet()) {
-//            if (entry.getValue()>max){
-//                result=entry.getKey();
-//                max=entry.getValue();
-//            }
-//        }
-//        return result;
     }
 
     public int getIndex(){
