@@ -15,6 +15,11 @@
         <module>silf-hash</module>
         <module>global_id</module>
         <module>schedual</module>
+        <module>rpc-server</module>
+        <module>rpc-client</module>
+        <module>rpc-netty-common</module>
+        <module>rpc-netty-server</module>
+        <module>rpc-netty-client</module>
     </modules>
 
 

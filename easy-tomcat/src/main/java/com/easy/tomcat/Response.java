@@ -1,6 +1,9 @@
 package com.easy.tomcat;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * @Author qinhaohao

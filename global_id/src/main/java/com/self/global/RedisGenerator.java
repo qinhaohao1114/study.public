@@ -2,7 +2,7 @@ package com.self.global;
 
 import redis.clients.jedis.Jedis;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class RedisGenerator {
     public static void main(String[] args) {

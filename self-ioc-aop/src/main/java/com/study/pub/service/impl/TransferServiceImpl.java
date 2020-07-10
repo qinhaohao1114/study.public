@@ -1,11 +1,8 @@
 package com.study.pub.service.impl;
 
 import com.study.pub.dao.AccountDao;
-import com.study.pub.dao.impl.AccountDaoImpl;
-import com.study.pub.factory.BeanFactory;
 import com.study.pub.pojo.Account;
 import com.study.pub.service.TransferService;
-import com.study.pub.utils.TransactionManager;
 
 public class TransferServiceImpl implements TransferService {
 

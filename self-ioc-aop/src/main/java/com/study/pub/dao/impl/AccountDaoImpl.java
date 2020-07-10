@@ -3,7 +3,6 @@ package com.study.pub.dao.impl;
 import com.study.pub.dao.AccountDao;
 import com.study.pub.pojo.Account;
 import com.study.pub.utils.ConnectionUtils;
-import com.study.pub.utils.DruidUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

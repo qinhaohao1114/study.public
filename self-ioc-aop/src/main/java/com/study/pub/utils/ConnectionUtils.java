@@ -1,7 +1,5 @@
 package com.study.pub.utils;
 
-import com.alibaba.druid.pool.DruidPooledConnection;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 

@@ -1,7 +1,10 @@
 package com.qhh.demo.controller;
 
 import com.qhh.demo.service.IDemoService;
-import com.qhh.edu.mvcframework.annotations.*;
+import com.qhh.edu.mvcframework.annotations.QhhAutowird;
+import com.qhh.edu.mvcframework.annotations.QhhController;
+import com.qhh.edu.mvcframework.annotations.QhhRequestMapping;
+import com.qhh.edu.mvcframework.annotations.Security;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
