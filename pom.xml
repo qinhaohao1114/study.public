@@ -22,8 +22,10 @@
         <module>rpc-netty-client</module>
         <module>zookeeper-client</module>
         <module>dubbo-service-api</module>
-        <module>dubbo-provider</module>
+        <module>dubbo-provider-annotation</module>
         <module>dubbo-consumer</module>
+        <module>dubbo-provider-xml</module>
+        <module>dubbo-consumer-xml</module>
     </modules>
     <properties>
         <dubbo.version>2.7.5 </dubbo.version>
