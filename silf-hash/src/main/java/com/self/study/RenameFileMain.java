@@ -11,13 +11,10 @@ import java.util.List;
  **/
 public class RenameFileMain {
 
-    public static String[] disArray=new String[]{"/Users/qinhaohao/Documents/模块三/任务一",
-            "/Users/qinhaohao/Documents/模块三/任务二","/Users/qinhaohao/Documents/模块三/任务三",
-            "/Users/qinhaohao/Documents/模块四/任务一","/Users/qinhaohao/Documents/模块四/任务二",
-            "/Users/qinhaohao/Documents/模块四/任务三","/Users/qinhaohao/Documents/模块四/任务四",
-            "/Users/qinhaohao/Documents/模块四/任务五",};
+    public static String[] disArray=new String[]{"/Users/qinhaohao/Documents/模块五/任务一",
+            "/Users/qinhaohao/Documents/模块五/任务二",};
 
-    public static int startIndex=374;
+    public static int startIndex=521;
     public static void main(String[] args) {
         for (String dis : disArray) {
             renameDir(dis,true);
