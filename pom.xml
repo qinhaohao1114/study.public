@@ -26,6 +26,8 @@
         <module>dubbo-consumer</module>
         <module>dubbo-provider-xml</module>
         <module>dubbo-consumer-xml</module>
+        <module>persistent_test</module>
+        <module>persistent</module>
     </modules>
     <properties>
         <dubbo.version>2.7.5 </dubbo.version>
