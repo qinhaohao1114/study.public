@@ -9,7 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nio</artifactId>
+    <artifactId>kafka-demo</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <!-- 高版本兼容低版本，我们使用和broker一致的版本 -->
+            <version>1.0.2</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
