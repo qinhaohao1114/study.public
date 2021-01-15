@@ -20,6 +20,9 @@ public class KafkaConfigs {
         configs.put("key.serializer","org.apache.kafka.common.serialization.IntegerSerializer");
         //设置value的序列化器
         configs.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        configs.put("acks", "all");
+        configs.put("compression.type", "gzip");
+        configs.put("retries", "3");
         return configs;
     }
 
