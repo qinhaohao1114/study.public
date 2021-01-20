@@ -33,6 +33,8 @@
         <module>rabbitmq-demo</module>
         <module>rabbitmq-spring</module>
         <module>kafka-demo</module>
+        <module>jdk-base</module>
+        <module>rocketmq-demo</module>
     </modules>
     <properties>
         <dubbo.version>2.7.5 </dubbo.version>
